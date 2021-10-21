@@ -17,6 +17,13 @@ fetch('user.json').then(function(response){
 }).catch(function(error){
     console.log(error)
 });
+// with Arrow function
+    
+fetch('user.json')
+.then((res)=> res.json())
+.then((obj)=> console.log(obj))
+.catch((err)=> console.log(err));
+ // Both work fine
 </script> 
 </body>
 </html>
